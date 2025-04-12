@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1164.49 868.7">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #333;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: #999;
+        stroke-width: 1.2px;
+      }
+
+      .cls-4 {
+        fill: url(#_6_lpi_10_);
+      }
+
+      .cls-5 {
+        opacity: .48;
+      }
+    </style>
+    <pattern id="_6_lpi_10_" data-name="6 lpi 10 %" x="0" y="0" width="72" height="72" patternTransform="translate(-3283.56 -3699.46) scale(.88)" patternUnits="userSpaceOnUse" viewBox="0 0 72 72">
+      <g>
+        <rect class="cls-1" width="72" height="72"/>
+        <g>
+          <line class="cls-3" x1="71.75" y1="66" x2="144.25" y2="66"/>
+          <line class="cls-3" x1="71.75" y1="42" x2="144.25" y2="42"/>
+          <line class="cls-3" x1="71.75" y1="18" x2="144.25" y2="18"/>
+          <line class="cls-3" x1="71.75" y1="54" x2="144.25" y2="54"/>
+          <line class="cls-3" x1="71.75" y1="30" x2="144.25" y2="30"/>
+          <line class="cls-3" x1="71.75" y1="6" x2="144.25" y2="6"/>
+        </g>
+        <g>
+          <line class="cls-3" x1="-.25" y1="66" x2="72.25" y2="66"/>
+          <line class="cls-3" x1="-.25" y1="42" x2="72.25" y2="42"/>
+          <line class="cls-3" x1="-.25" y1="18" x2="72.25" y2="18"/>
+          <line class="cls-3" x1="-.25" y1="54" x2="72.25" y2="54"/>
+          <line class="cls-3" x1="-.25" y1="30" x2="72.25" y2="30"/>
+          <line class="cls-3" x1="-.25" y1="6" x2="72.25" y2="6"/>
+        </g>
+        <g>
+          <line class="cls-3" x1="-72.25" y1="66" x2=".25" y2="66"/>
+          <line class="cls-3" x1="-72.25" y1="42" x2=".25" y2="42"/>
+          <line class="cls-3" x1="-72.25" y1="18" x2=".25" y2="18"/>
+          <line class="cls-3" x1="-72.25" y1="54" x2=".25" y2="54"/>
+          <line class="cls-3" x1="-72.25" y1="30" x2=".25" y2="30"/>
+          <line class="cls-3" x1="-72.25" y1="6" x2=".25" y2="6"/>
+        </g>
+      </g>
+    </pattern>
+  </defs>
+  <g id="_レイヤー_5" data-name="レイヤー 5">
+    <g>
+      <g class="cls-5">
+        <g>
+          <path class="cls-2" d="M582.24,21.58C400.53-33.67,220.98,35,0,31.74v786.28s151.92,6.91,267.02,32.23c115.09,25.32,234.53,29.92,315.23-20.72"/>
+          <path class="cls-2" d="M582.24,21.58c181.72-55.24,361.26,13.42,582.24,10.17v786.28s-151.92,6.91-267.02,32.23c-115.09,25.32-234.53,29.92-315.23-20.72"/>
+        </g>
+      </g>
+      <g class="cls-5">
+        <g>
+          <path class="cls-4" d="M582.24,60.14c-165.3-50.25-328.63,12.21-529.65,9.25v715.26s138.2,6.28,242.9,29.32c104.7,23.03,213.35,27.22,286.75-18.85"/>
+          <path class="cls-4" d="M582.24,60.14c165.3-50.25,328.63,12.21,529.65,9.25v715.26s-138.2,6.28-242.9,29.32c-104.7,23.03-213.35,27.22-286.75-18.85"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
