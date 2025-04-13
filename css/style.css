@@ -1,30 +1,48 @@
 @charset "utf-8" ;
 
-body{
-    
-}
+
 
 .mainvisual{
     background-color: #ed9195;
     height: 830px;
+    position: relative;
 }
 
 .menu {
     display: flex;
     color: #fff;
+    justify-content: space-between;
     
 }
 
 .menu p{
-    margin-top: 52px;
+    margin: 52px 0 20px 7.3%;
+    font-size: 26px;
+    
 }
 
 .menu ul{
     list-style: none;
     display: flex;
+    margin-right: 7.3%;
     margin-top: 52px;
+    font-size: 18px;
     
 }
+
+.menu ul li:first-child{
+    margin-right: 3.9%;
+}
+.menu ul li:nth-child(2){
+    margin-right: 3.5%;
+}
+.menu ul li:nth-child(3){
+    margin-right: 3.2%;
+}
+.menu ul li:nth-child(4){
+    margin-right: 2.6%;
+}
+
 
 h1{
     width: 85%;
@@ -32,25 +50,129 @@ h1{
 }
 
 .sweater{
-    width: 13%;
-    margin-top: 53px;
-    margin-left: 18%; 
+    width: 180px;
+    position: absolute;
+    top: 285px;
+    left: 18%;
 }
 
 .woman{
-    width: 64%;
-    margin-top: -382px;
-    margin-left: 16%; 
+    width:  880px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.sunglasses{
+    position: absolute;
+    right: 25%;
+    bottom: 200px;
+    width: 127px;
+}
+
+.lipstick{
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+    width: 97px;
+    z-index: 2;
 }
 
 .pickup{
-    width: 190px;
+    width: 14%;
+    position: absolute;
+    top: 594px;
+    left: 73%;
+    z-index: 1;
+    
+}
+
+.design_de{
+    width: 78.8%;
+    position: absolute;
+    top:400px;
+    left: 11%;
+}
+
+.mokuji{
+    position: absolute;
+    bottom:66px ;
+    left: 7.3%;
 }
 
 .mokuji img:first-child{
-    width: 6%;
-}
-.mokuji img:last-child{
-    width: 4%;
+    width: 90px;
 }
 
+.mokuji img:nth-of-type(2){
+    width: 105px;
+}
+
+.mokuji img:last-of-type{
+    width: 54px;
+}
+
+.mokuji p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.concept{
+    margin-top: 213px;
+    display: flex;
+    justify-content: center;
+}
+
+.concept_text{
+    width: 29%;
+}
+
+.concept_midashi{
+    display: flex;
+}
+
+.concept_midashi h2{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.concept_midashi h3{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.concept_text p:first-of-type{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.concept_text p:last-of-type{
+    font-size: 17px;
+
+}
+
+.woman_photo{
+    width: 44%;
+    margin-left: 7%;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: center;
+}
+
+.images_aboutme img:first-child{
+    width: 20%;
+}
+
+.images_aboutme img:nth-child(2){
+    width: 36%;
+}
+
+
+.aboutme_text p{
+    width: 30.5%;
+    font-size: 17px;
+
+}
