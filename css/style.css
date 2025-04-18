@@ -31,16 +31,11 @@
         font-size: 18px;
         position: relative;
         top: 7.3px;
-        width: 47%;
+        gap: 4vw;
     }
         
 .menu ul li{
     white-space: nowrap;
-}
-
-.menu ul li:not(:last-child){
-    margin-right: 11%;
-
 }
 
 
@@ -143,6 +138,15 @@ h1{
     justify-content: center;
 }
 
+.concept_midashi h3::before{
+    content: "";
+    width: 35.6px;
+    height: 1px;
+    background-color: #333;
+    display: block;
+    transform: rotate(123deg);
+}
+
 .concept_midashi h2{
     font-size: 55px;
     font-weight: bold;
@@ -151,6 +155,8 @@ h1{
 .concept_midashi h3{
     font-size: 42px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .concept_text p:first-of-type{
