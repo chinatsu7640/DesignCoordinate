@@ -250,13 +250,13 @@
     </section>
 
 
-    <form action="">
 
 
-        <section class="contact">
-            <div class="contact_detail">
-                <h3>お問い合せフォーム</h3>
-                <!-- <p class="kishamei">貴社名</p>
+
+    <section class="contact">
+        <div class="contact_detail">
+            <h3>お問い合せフォーム</h3>
+            <!-- <p class="kishamei">貴社名</p>
                 <div></div>
                 <p class="gotantousahmei">ご担当者名</p>
                 <div></div>
@@ -266,41 +266,46 @@
                 <div></div>
                 <button></button> -->
 
-                <form class="c-form"
-                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScYA1iagPStf-3zSEht95yw2j-ss_iPbjcmO90T9OqRll3bwQ/formResponse"
-                    method="post">
-                    <div class="c-form__item">
-                        <label class="c-form__label" for="field-company">貴社名</label>
-                        <input name="entry.1310866207" class="c-form__input" id="field-company" placeholder="株式会社 山田"
-                            type="text" required="required" />
-                    </div>
-                    <div class="c-form__item">
-                        <label class="c-form__label" for="field-name">ご担当者名</label>
-                        <input name="entry.1117854585" class="c-form__input" id="field-name" placeholder="株式会社 山田"
-                            type="text" required="required" />
-                    </div>
-                    <div class="c-form__item">
-                        <label class="c-form__label" for="field-mail">メールアドレス</label>
-                        <input name="entry.2056566425" class="c-form__input" id="field-mail"
-                            placeholder="sample@gmail.com" type="email" required="required" />
-                    </div>
-                    <div class="c-form__item">
-                        <label class="c-form__label" for="field-message">お問い合せ内容</label>
-                        <textarea name="entry.835151420" class="c-form__input" id="field-message"
-                            placeholder="お問い合わせ内容"></textarea>
-                    </div>
-                    <div class="c-form__submit">
-                        <button type="submit">送信する</button>
-                    </div>
-                </form>
+            <form class="c-form"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScYA1iagPStf-3zSEht95yw2j-ss_iPbjcmO90T9OqRll3bwQ/formResponse"
+                method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="c-form__item">
+                    <label class="c-form__label" for="field-company">貴社名</label>
+                    <input name="entry.1310866207" class="c-form__input" id="field-company" placeholder="株式会社 山田"
+                        type="text" required="required" />
+                </div>
+                <div class="c-form__item">
+                    <label class="c-form__label" for="field-name">ご担当者名</label>
+                    <input name="entry.1117854585" class="c-form__input" id="field-name" placeholder="株式会社 山田"
+                        type="text" required="required" />
+                </div>
+                <div class="c-form__item">
+                    <label class="c-form__label" for="field-mail">メールアドレス</label>
+                    <input name="entry.2056566425" class="c-form__input" id="field-mail" placeholder="sample@gmail.com"
+                        type="email" required="required" />
+                </div>
+                <div class="c-form__item">
+                    <label class="c-form__label" for="field-message">お問い合せ内容</label>
+                    <textarea name="entry.835151420" class="c-form__input" id="field-message"
+                        placeholder="お問い合わせ内容"></textarea>
+                </div>
+                <div class="c-form__submit">
+                    <button type="submit">送信する</button>
+                </div>
+            </form>
 
-            </div>
+        </div>
 
 
-        </section>
+    </section>
 
-    </form>
 
+
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='./thanks.html';}"></iframe>
 
 </body>
 
