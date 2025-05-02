@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disign coordinate</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,11 +16,11 @@
 
             <p>Web&Graphic design portfolio</p>
             <ul>
-                <li>concept</li>
-                <li>about me</li>
-                <li>works</li>
-                <li>skill</li>
-                <li>contact</li>
+                <li><a href="#concept">concept</a></li>
+                <li><a href="#aboutme">about me</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#design_works">works</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
 
         </div>
@@ -53,7 +53,7 @@
     </section>
 
 
-    <section class="concept">
+    <section id="concept">
 
         <div class="concept_text">
 
@@ -82,7 +82,7 @@
 
     </section>
 
-    <section class="aboutme">
+    <section id="aboutme">
 
         <div class="images_aboutme">
             <img src="./images/myphoto2x.png" alt="myphoto">
@@ -144,17 +144,27 @@
 
         <div class="circle1">
             <div>
-                <img src="./images/history_circle.svg" alt="">
-                <p class="period1">2016~2022</p>
-                <img class="text_innermaker" src="./images/inner maker.svg" alt="">
-                <ul class="text_innermaker_detail">
-                    <li>・pop、パッケージ制作</li>
-                    <li>・写真撮影ディレクション</li>
-                    <li>・キャッチコピー提案等</li>
-                </ul>
+                <div class="circle1_a">
+                    <img src="./images/history_circle.svg" alt="">
+                </div>
+
+                <div class="circle1_text_a">
+
+                    <div class="circle1_text_b">
+
+                        <p class="period1">2016~2022</p>
+                        <img class="text_innermaker" src="./images/inner maker.svg" alt="">
+                        <ul class="text_innermaker_detail">
+                            <li>・pop、パッケージ制作</li>
+                            <li>・写真撮影ディレクション</li>
+                            <li>・キャッチコピー提案等</li>
+                        </ul>
+
+                    </div>
+
+                </div>
 
             </div>
-
 
         </div>
 
@@ -196,7 +206,7 @@
 
     </section>
 
-    <section class="skill">
+    <section id="skill">
 
         <div class="book">
             <img src="./images/book.svg" alt="">
@@ -205,13 +215,15 @@
         <div class="title">
 
             <div>
+                <h3>skill</h3>
+            </div>
+
+            <div>
                 <img src="./images/chapter_arch.svg" alt="">
                 <h2>03</h2>
             </div>
 
-            <h3>skill</h3>
 
-            <div class="shadow"></div>
 
         </div>
 
@@ -227,7 +239,7 @@
             <p>POP・口紙デザイン作成</p>
         </div>
 
-        <div class="HTML/CSS">
+        <div class="HTML_CSS">
             <p>【HTML/CSS】</p>
             <div class="border3"></div>
             <p>Jqueryなど含む</p>
@@ -242,7 +254,7 @@
         <div class="photoshooting">
             <p>【写真撮影ディレクション】</p>
             <div class="border5"></div>
-            <p>撮影アングル・ライティングなども考慮に入れてのディレクション経験があります。</p>
+            <p>撮影アングル・ライティングなども考慮に入れての<br>ディレクション経験があります。</p>
         </div>
 
 
@@ -251,43 +263,102 @@
 
 
 
+    <section id="design_works">
+
+        <div class="works_background">
 
 
-    <section class="contact">
+            <h3><img src="./images/DESIGNWORKS.svg" alt=""></h3>
+
+            <div class="work1">
+
+                <div class="work1_image">
+                    <img src="./images/works1.jpg" alt="">
+                    <p>夏限定アイスクリームのバナー広告。夏らしい爽やかさを表現するために、清涼感を感じるエメラルドカラーを背景色にチョイスしました｡</p>
+
+                    <button onclick="openPopup()">detail</button>
+
+                </div>
+
+
+                <div class="work1_title">
+
+                    <div class="work1_number">
+                        <div class="decoration1">
+                            <p>web design/</p>
+                            <p>banner</p>
+                        </div>
+                        <p class="number001">00<span>1</span></p>
+                    </div>
+
+                    <p class="work1_tategaki">夏だけの期間限定！<br>スペシャルアイスクリーム</p>
+
+                </div>
+            </div>
+
+            <div class="work2">
+
+                <div class="work2_title">
+
+                    <div class="work2_number">
+                        <div class="decoration2">
+                            <p>web design/</p>
+                            <p>banner</p>
+                        </div>
+                        <p class="number002">00<span>2</span></p>
+                    </div>
+
+                    <p class="work2_tategaki">激旨！<br>
+                        デラックスバーガー</p>
+                </div>
+
+
+                <div class="work2_image">
+                    <img src="./images/works2.jpg" alt="">
+                    <p>高級感をテーマに作成。ブラウンや黒をメインカラーにして重厚感のあるリッチな雰囲気のデザインになるように意識しました。</p>
+
+                    <button onclick="openPopup()">detail</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <section id="contact">
         <div class="contact_detail">
             <h3>お問い合せフォーム</h3>
-            <!-- <p class="kishamei">貴社名</p>
-                <div></div>
-                <p class="gotantousahmei">ご担当者名</p>
-                <div></div>
-                <p class="mailadress">メールアドレス</p>
-                <div></div>
-                <p class="otoiawasenaiyou">お問い合せ内容</p>
-                <div></div>
-                <button></button> -->
 
             <form class="c-form"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScYA1iagPStf-3zSEht95yw2j-ss_iPbjcmO90T9OqRll3bwQ/formResponse"
                 method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="c-form__item">
                     <label class="c-form__label" for="field-company">貴社名</label>
-                    <input name="entry.1310866207" class="c-form__input" id="field-company" placeholder="株式会社 山田"
-                        type="text" required="required" />
+                    <input name="entry.1310866207" class="c-form__input" id="field-company" placeholder="" type="text"
+                        required="required" />
                 </div>
                 <div class="c-form__item">
                     <label class="c-form__label" for="field-name">ご担当者名</label>
-                    <input name="entry.1117854585" class="c-form__input" id="field-name" placeholder="株式会社 山田"
-                        type="text" required="required" />
+                    <input name="entry.1117854585" class="c-form__input" id="field-name" placeholder="" type="text"
+                        required="required" />
                 </div>
                 <div class="c-form__item">
                     <label class="c-form__label" for="field-mail">メールアドレス</label>
-                    <input name="entry.2056566425" class="c-form__input" id="field-mail" placeholder="sample@gmail.com"
-                        type="email" required="required" />
+                    <input name="entry.2056566425" class="c-form__input" id="field-mail" placeholder="" type="email"
+                        required="required" />
                 </div>
                 <div class="c-form__item">
                     <label class="c-form__label" for="field-message">お問い合せ内容</label>
-                    <textarea name="entry.835151420" class="c-form__input" id="field-message"
-                        placeholder="お問い合わせ内容"></textarea>
+                    <textarea name="entry.835151420" class="c-form__input" id="field-message" placeholder=""></textarea>
                 </div>
                 <div class="c-form__submit">
                     <button type="submit">送信する</button>
