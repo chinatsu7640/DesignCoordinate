@@ -25,7 +25,11 @@
 
         </div>
 
-        <h1><img src="./images/DESIGNCOODINATE_logo.svg" alt="DESIGN COODINATE"></h1>
+        <h1>
+            <img class="DESIGNCOODINATE_logo_pc" src="./images/DESIGNCOODINATE_logo.svg" alt="DESIGN COODINATE">
+            <img class="DESIGNCOODINATE_logo_sp" src="./images/DESIGNCOORDINATE_logo_2X.png" alt="">
+
+        </h1>
 
         <div class="woman">
             <img src="./images/woman_1.png" alt="">
@@ -85,7 +89,11 @@
     <section id="aboutme">
 
         <div class="images_aboutme">
-            <img src="./images/myphoto2x.png" alt="myphoto">
+            <div class="swing-outer">
+                <figure class="swing">
+                    <img src="./images/myphoto2x.png" alt="myphoto">
+                </figure>
+            </div>
             <img src="./images/masking tape.png" alt="">
             <img src="./images/cool.svg" alt="">
             <img src="./images/cute.svg" alt="">
@@ -144,33 +152,23 @@
 
         <div class="circle1">
             <div>
-                <div class="circle1_a">
-                    <img src="./images/history_circle.svg" alt="">
-                </div>
-
-                <div class="circle1_text_a">
-
-                    <div class="circle1_text_b">
-
-                        <p class="period1">2016~2022</p>
-                        <img class="text_innermaker" src="./images/inner maker.svg" alt="">
-                        <ul class="text_innermaker_detail">
-                            <li>・pop、パッケージ制作</li>
-                            <li>・写真撮影ディレクション</li>
-                            <li>・キャッチコピー提案等</li>
-                        </ul>
-
-                    </div>
-
-                </div>
+                <img src="./images/history_circle.svg" alt="">
+                <p class="period1">2016~2022</p>
+                <img class="text_innermaker" src="./images/inner maker.svg" alt="">
+                <ul class="text_innermaker_detail">
+                    <li>・pop、パッケージ制作</li>
+                    <li>・写真撮影ディレクション</li>
+                    <li>・キャッチコピー提案等</li>
+                </ul>
 
             </div>
 
         </div>
 
 
-        <div>
-            <img class="circle2" src="./images/history_circle.svg" alt="">
+
+        <div class="circle2">
+            <img src="./images/history_circle.svg" alt="">
             <p class="period2">2023~2024</p>
             <img class="text_sankyu" src="./images/sankyu.svg" alt="">
 
@@ -178,8 +176,8 @@
         </div>
 
 
-        <div>
-            <img class="circle3" src="./images/history_circle.svg" alt="">
+        <div class="circle3">
+            <img src="./images/history_circle.svg" alt="">
             <p class="period3">2024~現在</p>
             <img class="text_ikukyu" src="./images/ikukyu.svg" alt="">
             <ul class="text_ikukyugo_detail">
@@ -189,13 +187,13 @@
 
         </div>
 
-        <div>
-            <img class="circle4" src="./images/history_circle.svg" alt="">
+        <div class="circle4">
+            <img src="./images/history_circle.svg" alt="">
 
             <p class="period4">2025~現在</p>
             <img class="text_designschool" src="./images/design school.svg" alt="">
             <ul class="text_designschool_detail">
-                <li>・バナー、HPデザイン</li>
+                <li>・バナー/HPデザイン</li>
                 <li>・コーディング</li>
             </ul>
 
@@ -270,9 +268,9 @@
 
             <h3><img src="./images/DESIGNWORKS.svg" alt=""></h3>
 
-            <div class="work1">
+            <div class="work">
 
-                <div class="work1_image">
+                <div class="work_image">
                     <img src="./images/works1.jpg" alt="">
                     <p>夏限定アイスクリームのバナー広告。夏らしい爽やかさを表現するために、清涼感を感じるエメラルドカラーを背景色にチョイスしました｡</p>
 
@@ -281,9 +279,9 @@
                 </div>
 
 
-                <div class="work1_title">
+                <div class="work_title1">
 
-                    <div class="work1_number">
+                    <div class="work_number">
                         <div class="decoration1">
                             <p>web design/</p>
                             <p>banner</p>
@@ -291,16 +289,16 @@
                         <p class="number001">00<span>1</span></p>
                     </div>
 
-                    <p class="work1_tategaki">夏だけの期間限定！<br>スペシャルアイスクリーム</p>
+                    <p class="work_tategaki">夏だけの期間限定！<br>スペシャルアイスクリーム</p>
 
                 </div>
             </div>
 
-            <div class="work2">
+            <div class="work">
 
-                <div class="work2_title">
+                <div class="work_title2">
 
-                    <div class="work2_number">
+                    <div class="work_number">
                         <div class="decoration2">
                             <p>web design/</p>
                             <p>banner</p>
@@ -308,12 +306,12 @@
                         <p class="number002">00<span>2</span></p>
                     </div>
 
-                    <p class="work2_tategaki">激旨！<br>
+                    <p class="work_tategaki">激旨！<br>
                         デラックスバーガー</p>
                 </div>
 
 
-                <div class="work2_image">
+                <div class="work_image">
                     <img src="./images/works2.jpg" alt="">
                     <p>高級感をテーマに作成。ブラウンや黒をメインカラーにして重厚感のあるリッチな雰囲気のデザインになるように意識しました。</p>
 
@@ -323,9 +321,102 @@
 
             </div>
 
+
+            <div class="work">
+
+                <div class="work_image">
+                    <img src="./images/works3.jpg" alt="">
+                    <p>20〜50代の女性がターゲット。メインカラーはロゴ同じピンクに。幅広い層に受け入れらるように、くすみピンクのグラデーションで落ち着いた雰囲気に仕上げました｡</p>
+
+                    <button onclick="openPopup()">detail</button>
+
+                </div>
+
+
+                <div class="work_title1">
+
+                    <div class="work_number">
+                        <div class="decoration2">
+                            <p>web design/</p>
+                            <p>banner</p>
+                        </div>
+                        <p class="number002">00<span>3</span></p>
+                    </div>
+
+                    <p class="work_tategaki">美容室の<br>
+                        ホームページデザイン</p>
+
+                </div>
+            </div>
+
+
+            <div class="work">
+
+                <div class="work_title2">
+
+                    <div class="work_number">
+                        <div class="decoration2">
+                            <p>web design/</p>
+                            <p>banner</p>
+                        </div>
+                        <p class="number002">00<span>4</span></p>
+                    </div>
+
+                    <p class="work_tategaki">カフェのホームページ<br>
+                        コーディング</p>
+                </div>
+
+
+                <div class="work_image">
+                    <img src="./images/works4.jpg" alt="">
+                    <p>カフェのホームページのコーディングを制作しました。
+                        vscodeを使用して、HTML・CSSを作成しました。使用データはIllustratorです。</p>
+
+                    <button onclick="openPopup()">detail</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="work">
+
+                <div class="work_image">
+                    <img src="./images/works5.jpg" alt="">
+                    <p>当Webデザインポートフォリオサイトのデザイン・コーディングを制作しました。デザイン×コーディネートのコンセプトの元、ファッション雑誌をイメージしたレイアウトに仕上げました。</p>
+
+                    <button onclick="openPopup()">detail</button>
+
+                </div>
+
+
+                <div class="work_title1">
+
+                    <div class="work_number">
+                        <div class="decoration2">
+                            <p>web design/</p>
+                            <p>banner</p>
+                        </div>
+                        <p class="number002">00<span>5</span></p>
+                    </div>
+
+                    <p class="work_tategaki">ポートフォリオサイト<br>
+                        デザイン＆コーディング</p>
+
+                </div>
+            </div>
+
+
+
+
         </div>
 
         </div>
+
+        </div>
+
+
 
 
 
@@ -361,7 +452,8 @@
                     <textarea name="entry.835151420" class="c-form__input" id="field-message" placeholder=""></textarea>
                 </div>
                 <div class="c-form__submit">
-                    <button type="submit">送信する</button>
+                    <button type="submit">
+                        <a href="#">送信する</a></button>
                 </div>
             </form>
 
