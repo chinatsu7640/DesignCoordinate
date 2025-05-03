@@ -2,6 +2,15 @@
 
 html { scroll-behavior: smooth;}
 
+body{
+    overflow-x: hidden;
+}
+
+.ober-flow{
+    overflow: hidden;
+
+}
+
 .mainvisual{
     background-color: #ed9195;
     position: relative;
@@ -72,15 +81,17 @@ h1{
     width: 64%;
     position: relative;
     top: 99px;
-    left: 50%;
-    transform: translatex(100%);
+    left: 100%;
+    /* transform: translatex(100%); */
     margin-bottom: -2%;
 
-    animation: pikopiko 1s steps(2, start) infinite , elm 4s forwards;
+    animation: pikopiko 1s steps(2, start) infinite , elm 8s forwards;
     
 
+ 
+
 }
-    
+/*     
 @keyframes pikopiko {
         
     0% {
@@ -99,9 +110,10 @@ h1{
           to {
     
     transform:translateX(-50%);
+    left: 50%;
     }
     
-          }
+          } */
 
 
       
@@ -145,6 +157,12 @@ h1{
     left: 11%;
 }
 
+.design_de { 
+    display: block !important; }
+
+.design_de_sp {
+     display: none !important; }
+
 .mokuji{
     position: absolute;
     bottom:4% ;
@@ -172,16 +190,74 @@ h1{
     margin-bottom: 4px;
 }
 
-@media screen and (max-width:390px) {
+
+
+
+
+
+@media screen and (max-width:767px) {
+
 
 .menu p{
     font-size: 13px;
+    position: absolute;
+    top: 34px;
+    left: 8%;
+}
+
+.menu ul{
+    display: none;
 }
 
 .DESIGNCOODINATE_logo_pc { display: none !important; }
 .DESIGNCOODINATE_logo_sp { display: block !important; }
 
-     
+h1{
+    width: 87%;
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+.woman{
+    width: 131%;
+    position: relative;
+    top: 239px;
+    left: 50%;
+    transform: translateX(100%);
+    z-index: 1;
+    margin-bottom: 0;
+    
+}
+
+.design_de { display: none !important; }
+.design_de_sp { 
+    display: block !important;
+    width: 84%;
+    position: absolute;
+    top: 57%;
+    left: 10%;
+    z-index: 2; }
+
+.sweater{
+    width: 21%;
+    top: 43%;
+    left: 17%;
+}
+
+
+.pickup{
+    width: 26%;
+
+}
+
+.mokuji{
+    position: absolute;
+    bottom: 20px;
+}   
+
+
 
 }
 
@@ -259,6 +335,15 @@ h1{
 
 }
 
+.woman_photo{
+    width: 52%;
+    margin-left: 8.5%;
+}
+
+.woman_photo img{
+    width: 100%;
+}
+
 @media screen and (max-width:1161px) {
     .concept_midashi h2{
         font-size: 50px;
@@ -294,21 +379,10 @@ h1{
 }
 
 
-@media screen and (min-width:390) {
-
-    
-}
 
 
 
-.woman_photo{
-    width: 52%;
-    margin-left: 8.5%;
-}
 
-.woman_photo img{
-    width: 100%;
-}
 
 #aboutme{
     margin: 0 auto;
@@ -366,14 +440,14 @@ h1{
 .swing:after {
     content: '';
     border: 1px solid #999;
-    top: 3px;
+    top: -17px;
     z-index: 0;
-    left: 39%;
+    left: 47%;
     width: 35px;
     height: 35px;
     border-bottom: none;
     border-right: none;
-    transform: rotate(37deg);
+    transform: rotate(45deg);
     position: absolute;
 }
 
@@ -411,8 +485,8 @@ h1{
 .images_aboutme img:nth-child(2){
     width: 6%;
     position: absolute;
-    top: -3.2%;
-    left: 43%;
+    top: -8%;
+    left: 51%;
     z-index: 2;
 }
 
@@ -584,6 +658,21 @@ h1{
     position: relative;
     margin-top: 66px;
 }
+
+
+.background { 
+    display: block !important; }
+
+.background_sp {
+     display: none !important; }
+
+
+.mycarrierhistory_moji { 
+    display: block !important; }
+
+.bmycarrierhistory_moji_sp {
+     display: none !important; }
+
 
 
 .woman_illustration{
@@ -1277,4 +1366,167 @@ h1{
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     transform: translateY(-50%);
+}
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+ 
+
+
+    #concept{
+        margin: 0 auto;
+        margin-top: 49px;
+        max-width: 767px; 
+        flex-direction: column;
+    
+    }
+
+
+    .concept_text{
+        display: block;
+        width: 77%;
+        margin: 0 auto;
+    }
+
+
+
+    .concept_midashi{
+        width: 38%;
+        justify-content: initial;
+    }
+
+    .concept_midashi h2{
+        font-size: 31px;
+    }
+
+    .concept_midashi h3{
+        font-size: 25px;
+    }
+
+    
+
+    .concept_text p:first-of-type{
+        padding:  40px 0 21px 0;
+        margin: 0%;
+        text-align: initial;
+        font-size: 20px;
+        border: none;
+    }
+
+    .concept_text p:first-of-type::after {
+        position: absolute; /*positionをabsoluteに指定*/
+        content: "";
+        background-color: #b3b3b3; /*下線の色*/
+        width: 220px;
+        height: 3px;
+        bottom: 9px;
+        left: 0%;;  
+        /* transform: translateX(-50%); */
+      }
+
+      .concept_text p:last-of-type{
+        order: 2;
+      }
+
+
+    .woman_photo{
+        width: 82%;
+        margin-left: auto;
+        order: 1;
+    }
+
+
+    #aboutme{
+        flex-direction: column;
+    }
+
+    .images_aboutme{
+        width: 75%;
+        order: 3;
+        
+    }
+
+    .aboutme_text{
+        width: 77%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .aboutme_midashi{
+        display: block;
+        order: 1;
+    }
+
+    .aboutme_midashi h2{
+        font-size: 31px;
+    }
+
+    .aboutme_midashi h3{
+        font-size: 25px;
+    }
+
+    .name{
+        order: 3;
+    }
+
+    .seif_introduction{
+        order: 4;
+    }
+
+
+    .background { 
+        display: none !important; }
+    
+    .background_sp {
+         display: block !important;
+         position: relative; }
+    
+    
+    .mycarrierhistory_moji { 
+        display: none !important; }
+    
+    .mycarrierhistory_moji_sp {
+         display: block !important; 
+         width: 77%;
+         position: absolute;
+         top:11%;
+         left: 50%;
+         transform: translateX(-50%);
+        }
+
+    .circle1{
+        width: 61%;
+        top: 19%;
+        left: 11%;
+
+        }
+
+    .circle2{
+        width: 34%;
+        top: 42%;
+        right: 11%;
+        left: auto;
+
+    }   
+    
+    .circle3{
+        width: 43%;
+        top: 50%;
+        left: 11%;
+    
+    }
+
+    .circle4{
+        width: 49%;
+        top:70%;
+        right: 11%;
+        left: auto;
+
+    }
+
+    
 }
