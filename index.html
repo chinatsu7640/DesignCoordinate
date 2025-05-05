@@ -14,18 +14,50 @@
 
     <section class="mainvisual">
 
-        <div class="menu">
+
+        <header class="menu c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
 
             <p>Web&Graphic design portfolio</p>
-            <ul>
+
+            <input type="checkbox" name="hamburger" id="hamburger"
+                class="c-hamburger-menu__input" /><!-- 追記 idはlabelのforと同じにする -->
+            <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+            <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+                <li class=" c-header__list-item">
+                    <a href="#concept" class="c-header__list-link">concept</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="aboutme#" class="c-header__list-link">aboutme</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="#skill" class="c-header__list-link">skill</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="#desgin_works" class="c-header__list-link">works</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="#contact" class="c-header__list-link">contact</a>
+                </li>
+            </ul>
+            <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+                <span class="c-hamburger-menu__button-mark"></span>
+                <span class="c-hamburger-menu__button-mark"></span>
+                <span class="c-hamburger-menu__button-mark"></span>
+            </label>
+
+
+
+        </header>
+
+
+        <!-- <ul>
                 <li><a href="#concept">concept</a></li>
                 <li><a href="#aboutme">about me</a></li>
                 <li><a href="#skill">skill</a></li>
                 <li><a href="#design_works">works</a></li>
                 <li><a href="#contact">contact</a></li>
-            </ul>
+            </ul> -->
 
-        </div>
 
         <h1>
             <img class="DESIGNCOODINATE_logo_pc" src="./images/DESIGNCOODINATE_logo.svg" alt="DESIGN COODINATE">
@@ -56,6 +88,9 @@
             <img src="./images/chapter3.svg" alt="skill">
             <p>これまでの経験で培ったスキルのご紹介</p>
         </div>
+
+
+
 
     </section>
 
@@ -99,7 +134,8 @@
             </div>
             <img src="./images/pin2x.png" alt="">
             <img src="./images/cool.svg" alt="">
-            <img src="./images/cute.svg" alt="">
+            <img class="cute_pc" src="./images/cute.svg" alt="">
+            <img class="cute_sp" src="./images/cute_sp.svg" alt="">
         </div>
 
         <div class="aboutme_text">
@@ -152,6 +188,7 @@
         </div>
 
         <img class="fukidashi" src="./images/illustration_fukidashi.svg" alt="">
+        <img class="fukidashi_sp" src="./images/fukidashi_sp.svg" alt="">
 
 
 
@@ -213,6 +250,7 @@
 
         <div class="book">
             <img src="./images/book.svg" alt="">
+            <img src="./images/book_sp.svg" alt="">
         </div>
 
         <div class="title">

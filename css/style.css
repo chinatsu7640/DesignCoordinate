@@ -14,7 +14,13 @@ body{
 .mainvisual{
     background-color: #ed9195;
     position: relative;
+    
 }
+
+.c-hamburger-menu {
+    position: relative;
+  }
+  
 
 .menu {
     display: flex;
@@ -194,76 +200,6 @@ h1{
 
 
 
-
-@media screen and (max-width:767px) {
-
-
-.menu p{
-    font-size: 13px;
-    position: absolute;
-    top: 34px;
-    left: 8%;
-}
-
-.menu ul{
-    display: none;
-}
-
-.DESIGNCOODINATE_logo_pc { display: none !important; }
-.DESIGNCOODINATE_logo_sp { display: block !important; }
-
-h1{
-    width: 87%;
-    position: absolute;
-    top: 42px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-    
-.woman{
-    width: 131%;
-    position: relative;
-    top: 239px;
-    left: 50%;
-    transform: translateX(100%);
-    z-index: 1;
-    margin-bottom: 0;
-    
-}
-
-.design_de { display: none !important; }
-.design_de_sp { 
-    display: block !important;
-    width: 84%;
-    position: absolute;
-    top: 57%;
-    left: 10%;
-    z-index: 2; }
-
-.sweater{
-    width: 21%;
-    top: 43%;
-    left: 17%;
-}
-
-
-.pickup{
-    width: 26%;
-
-}
-
-.mokuji{
-    position: absolute;
-    bottom: 20px;
-}   
-
-
-
-}
-
-
-
-
 #concept{
     margin: 0 auto;
     margin-top: 213px;
@@ -409,6 +345,12 @@ h1{
     
 }
 
+.cute_pc { 
+    display: block !important; }
+
+.cute_sp {
+     display: none !important; }
+
 
 
 .swing-outer {
@@ -506,6 +448,8 @@ h1{
     left: -8.4%;
 }
 
+
+
 .aboutme_text{
     width: 36%;
     top: 0;
@@ -573,12 +517,24 @@ h1{
 
 .name{
     display: flex;
-    justify-content: center;
-    border-bottom: solid #b3b3b3 3px;
+    justify-content: space-between;
+    /* border-bottom: solid #b3b3b3 3px; */
     position: relative;
     top: -10%;
     margin-bottom: 19%;
 }
+
+.name::after {
+    position: absolute; /*positionをabsoluteに指定*/
+    content: "";
+    background-color: #b3b3b3; /*下線の色*/
+    width: 100%;
+    height: 3px;
+    bottom: -4px;
+    left: 0%;;  
+    /* transform: translateX(-50%); */
+  }
+
 
 .name p:first-child{
     font-size: 37px;
@@ -670,7 +626,7 @@ h1{
 .mycarrierhistory_moji { 
     display: block !important; }
 
-.bmycarrierhistory_moji_sp {
+.mycarrierhistory_moji_sp {
      display: none !important; }
 
 
@@ -683,6 +639,13 @@ h1{
     left: 3.3%;
     z-index: 2;
 }
+
+.fukidashi { 
+    display: block !important; }
+
+.fukidashi_sp {
+     display: none !important;}
+
 
 .fukidashi{
     width: 20%;
@@ -899,6 +862,8 @@ h1{
 .book{
     width: 100%;
 }
+
+
 
 .title{
     width: 43%;
@@ -1374,8 +1339,171 @@ h1{
 
 
 @media screen and (max-width:767px) {
- 
 
+    .c-hamburger-menu__list{
+        background-color: #eeeeee; /* カスタマイズしてください */
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        padding: 2rem; /* カスタマイズしてください */
+        position: absolute;
+        transform: translateX(-100%);
+        transition: 0.3s; /* カスタマイズしてください */
+        top: 100%;
+        width: 100%;
+      }
+    
+      #hamburger:checked ~ .c-hamburger-menu__list {
+        transform: translateX(0%);
+        transition: 0.3s;
+      }
+    }
+    
+    .c-hamburger-menu__input {
+      display: none;
+    }
+    
+    .c-hamburger-menu__bg {
+      background-color: #000; /* カスタマイズしてください */
+      cursor: pointer;
+      display: none;
+      height: 100vh;
+      left: 0;
+      opacity: 0.4; /* カスタマイズしてください */
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+    
+    #hamburger:checked ~ .c-hamburger-menu__bg {
+      display: block;
+    }
+    
+    .c-hamburger-menu__button {
+      display: none;
+    }
+    
+    @media screen and (max-width: 750px) {
+      .c-hamburger-menu__button {
+        align-items: center;
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* カスタマイズしてください */
+        height: 32px; /* カスタマイズしてください */
+        justify-content: center;
+        width: 32px; /* カスタマイズしてください */
+      }
+    }
+    
+    .c-hamburger-menu__button-mark {
+      background-color: #fff; /* カスタマイズしてください */
+      display: block;
+      height: 2px; /* カスタマイズしてください */
+      transition: 0.3s; /* カスタマイズしてください */
+      width: 20px; /* カスタマイズしてください */
+    }
+    
+    @media screen and (max-width: 750px) {
+      #hamburger:checked
+        ~ .c-hamburger-menu__button
+        .c-hamburger-menu__button-mark:nth-of-type(1) {
+        transform: translate(2px, 1px) rotate(45deg); /* カスタマイズしてください */
+        transform-origin: 0%; /* カスタマイズしてください */
+      }
+      #hamburger:checked
+        ~ .c-hamburger-menu__button
+        .c-hamburger-menu__button-mark:nth-of-type(2) {
+        opacity: 0;
+      }
+      #hamburger:checked
+        ~ .c-hamburger-menu__button
+        .c-hamburger-menu__button-mark:nth-of-type(3) {
+        transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
+        transform-origin: 0%; /* カスタマイズしてください */
+      }
+ 
+    .menu p{
+        font-size: 13px;
+        position: absolute;
+        top: 34px;
+        left: 8%;
+    }
+    
+    .menu ul{
+        display: none;
+    }
+    
+    .DESIGNCOODINATE_logo_pc { display: none !important; }
+    .DESIGNCOODINATE_logo_sp { display: block !important; }
+    
+    h1{
+        width: 87%;
+        position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        
+    .woman{
+        width: 131%;
+        position: relative;
+        top: 239px;
+        left: 50%;
+        transform: translateX(100%);
+        z-index: 1;
+        margin-bottom: 0;
+        
+    }
+    
+    .design_de { display: none !important; }
+    .design_de_sp { 
+        display: block !important;
+        width: 84%;
+        position: absolute;
+        top: 47%;
+        left: 10%;
+        z-index: 2; }
+    
+    .sweater{
+        width: 23%;
+        top: 28%;
+        left: 13%;
+    }
+    
+    .sunglasses{
+        width: 17%;
+        bottom: 33%;
+        right: 9%;
+    }
+
+    .lipstick{
+        width: 10%;
+        top: 38%;
+        right: 5%;
+    }
+    
+    
+    .pickup{
+        width: 26%;
+        top: 31%;
+        right: 7%;
+        left: auto;
+    
+    }
+    
+    .mokuji{
+        position: static;
+        padding: 0 6% 31px;
+        margin-top: 230px;
+    }   
+    
+    
 
     #concept{
         margin: 0 auto;
@@ -1387,34 +1515,36 @@ h1{
 
 
     .concept_text{
-        display: block;
-        width: 77%;
-        margin: 0 auto;
+        display: contents;
+        
     }
 
 
 
     .concept_midashi{
-        width: 38%;
+        width: 77%;
+        margin-left: 11%;
         justify-content: initial;
+        
     }
 
     .concept_midashi h2{
-        font-size: 31px;
+        font-size: 34px;
     }
 
     .concept_midashi h3{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     
 
     .concept_text p:first-of-type{
-        padding:  40px 0 21px 0;
-        margin: 0%;
+        width: 77%;
+        margin:  40px 0 54px 11%;
         text-align: initial;
-        font-size: 20px;
+        font-size: 19px;
         border: none;
+        letter-spacing: 0.06em;
     }
 
     .concept_text p:first-of-type::after {
@@ -1423,13 +1553,17 @@ h1{
         background-color: #b3b3b3; /*下線の色*/
         width: 220px;
         height: 3px;
-        bottom: 9px;
+        bottom: -4px;
         left: 0%;;  
         /* transform: translateX(-50%); */
       }
 
       .concept_text p:last-of-type{
         order: 2;
+        font-size: 16px;
+        max-width: 767px;
+        width: 77%;
+        margin: 43px 11.5% 54px;
       }
 
 
@@ -1437,44 +1571,111 @@ h1{
         width: 82%;
         margin-left: auto;
         order: 1;
-    }
+       }
+
+
+  
 
 
     #aboutme{
         flex-direction: column;
+        margin: 0 11.5%;
+        padding: 0;
     }
 
     .images_aboutme{
-        width: 75%;
-        order: 3;
+        width: 91%;
+        order: 4;
+        top: 50px;
+        left: -8%;
         
     }
 
+    .cute_pc { 
+        display: none !important; }
+    
+    .cute_sp {
+         display: block !important; }
+
+
+    .images_aboutme img:nth-child(3) {
+        top: 5.4%;
+        right: -20.5%;
+        
+    }
+
+    .images_aboutme img:nth-child(5){
+        width: 29%;
+        max-width: 160px;
+        position: absolute;
+        top: 41%;
+        right: -29.4%;
+    }
+
     .aboutme_text{
-        width: 77%;
-        margin: 0 auto;
-        display: block;
+        display: contents;
     }
     
     .aboutme_midashi{
-        display: block;
+        margin: 0 0 0  auto;
         order: 1;
+        justify-content: initial;
+        padding-bottom: 35px;
     }
 
+    .chapter02{
+        position: relative;
+        top: 5px;
+    }
+    
+
     .aboutme_midashi h2{
-        font-size: 31px;
+        font-size: 34px;
     }
 
     .aboutme_midashi h3{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .name{
         order: 3;
+        /* width: 100%; */
+        justify-content: initial;
+        white-space: nowrap;
+        margin: 0 0 0 auto;
     }
+
+    .name p:nth-child(2)::before {
+        position: relative;
+        left: -28px;
+        bottom: -13px;
+        width: 34px;
+        height: 2px;
+    }
+
+    .name::after {
+        height: 2px;
+  
+        
+    }
+
+    .name p:first-child{
+        font-size: 20px;
+        
+    }
+
+    .name p:nth-child(2){
+        font-size: 17px;
+        
+    }
+
+
+
+
 
     .seif_introduction{
         order: 4;
+        margin-top: 100px;
     }
 
 
@@ -1527,6 +1728,24 @@ h1{
         left: auto;
 
     }
+
+    .woman_illustration{
+        width: 34%;
+        top: 76%;
+        left:4%
+    }
+
+    .fukidashi { 
+        display: none !important; }
+    
+    .fukidashi_sp {
+         display: block !important;
+         width: 38%;
+         position: absolute;
+         bottom: -57px;
+         right: 27%
+        
+        }
 
     
 }
