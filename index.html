@@ -7,6 +7,11 @@
     <title>Disign coordinate</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/remodal.css">
+    <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/remodal.min.js"></script>
 </head>
 
 <body>
@@ -343,7 +348,13 @@
                     <img src="./images/works1.jpg" alt="">
                     <p>夏限定アイスクリームのバナー広告。夏らしい爽やかさを表現するために、清涼感を感じるエメラルドカラーを背景色にチョイスしました｡</p>
 
-                    <button onclick="openPopup()">detail</button>
+                    <a href="#modal_01" class="btn">detail</a>
+                    <div class="remodal" data-remodal-id="modal_01">
+                        <div><img src="   " alt="work1"></div>
+                        <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                    </div>
+
+                    <!-- <button onclick="openPopup()">detail</button> -->
 
                 </div>
 
