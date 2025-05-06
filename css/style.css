@@ -220,6 +220,15 @@ h1{
     
 }
 
+.woman_photo {
+    opacity: 0;
+    transition: 2s;
+  }
+.woman_photo.is-show {
+    opacity: 1;
+  }
+
+
 .concept_midashi{
     display: flex;
     justify-content: center;
@@ -1100,7 +1109,7 @@ h1{
 }
 
 .work:last-child{
-    padding-bottom: 116px;
+    padding-bottom: 70px;
 }
 
 .work_image{
@@ -1798,7 +1807,7 @@ h1{
 
     
     #skill{
-        padding: 70px 0 ;
+        padding: 90px 0 ;
     }    
 
 
@@ -1809,7 +1818,10 @@ h1{
          display: block !important; }
 
     
-       
+         
+    .title{
+        top: 20%;
+    }   
 
     .title img{
         width: 41px;
@@ -1820,7 +1832,7 @@ h1{
     }     
 
     .title h3{
-        font-size: 30px;
+        font-size: clamp(20px, 1vw, 30px);
     }
     
     
@@ -1833,7 +1845,7 @@ h1{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 34%;
+        top: 31%;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -1849,7 +1861,7 @@ h1{
     }
 
     .Photoshop p:nth-of-type(2),.Illustrator p:nth-of-type(2),.HTML_CSS p:nth-of-type(2),.catchcopy p:nth-of-type(2),.photoshooting p:nth-of-type(2){
-        font-size: 14px;
+        font-size: clamp(14px,4vw,18px);
         margin-top: 0;
     }
 
@@ -1892,12 +1904,16 @@ h1{
 
 #design_works {
     padding: 0 6%;
+    margin-top: 40px;
 }
-
 
 .work{
     flex-direction: column;
-    padding: 35px 10%;
+    padding: 35px 10% ;
+}
+
+.work:last-child{
+    padding-bottom: 70px;
 }
 
 .work_image{
@@ -1908,6 +1924,7 @@ h1{
 .work_title1{
     order: 1;
     margin: 0;
+    padding-top: 10%;
 }
 
 .decoration1,.decoration2{
@@ -1961,7 +1978,12 @@ h1{
 }
 
 .work_image p{
-    font-size: clamp(14px, 4vw, 17px);
+    font-size: clamp(14px, 3vw, 17px);
+    margin-bottom: 16px;
+}
+
+.work_title2{
+    margin: 0;
 }
 
 

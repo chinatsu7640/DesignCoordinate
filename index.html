@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/remodal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -143,7 +144,7 @@
 
         </div>
 
-        <div class="woman_photo">
+        <div class="inview woman_photo is-show">
             <img src="./images/woman_photo.jpg" alt="">
 
         </div>
@@ -319,13 +320,13 @@
             <div class="catchcopy">
                 <p>【キャッチコピー提案】</p>
                 <div class="border4"></div>
-                <p>バナー・HP・POPなどのキャッチコピーや<br>謳い文句などのご提案も可能です。</p>
+                <p>バナー・HP・POPなどのキャッチコピー提案</p>
             </div>
 
             <div class="photoshooting">
                 <p>【写真撮影ディレクション】</p>
                 <div class="border5"></div>
-                <p>撮影アングル・ライティングなども考慮に入れての<br>ディレクション経験があります。</p>
+                <p>モデル撮影や物撮り等のディレクション</p>
             </div>
 
         </div>
@@ -548,8 +549,17 @@
         let submitted = false;
     </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='./thanks.html';}">
+        onload="if(submitted){window.location='./html/thanks.html';}">
     </iframe>
+
+
+    $(function(){
+    $(".inview").on("inview", function (event, isInView) {
+    if (isInView) {
+    $(this).stop().addClass("is-show");
+    }
+    });
+    });
 
 
 
