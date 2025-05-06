@@ -52,7 +52,9 @@ body{
     white-space: nowrap;
 }
 
-
+.menu_sp{
+    display: none;
+}
 
 h1{
     width: 85%;
@@ -1342,6 +1344,13 @@ h1{
       #hamburger:checked ~ .c-hamburger-menu__list {
         transform: translateX(0%);
         transition: 0.3s;
+        opacity: 0.9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        z-index: 5;
       }
     }
     
@@ -1369,8 +1378,22 @@ h1{
     .c-hamburger-menu__button {
       display: none;
     }
+
+   
+
+    .c-header__list li{
+        color: #4d4d4d;
+    }
     
-    @media screen and (max-width: 750px) {
+
+
+
+    @media screen and (max-width: 767px) {
+
+
+
+
+
       .c-hamburger-menu__button {
         align-items: center;
         appearance: none;
@@ -1383,6 +1406,10 @@ h1{
         height: 32px; /* カスタマイズしてください */
         justify-content: center;
         width: 32px; /* カスタマイズしてください */
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        z-index: 5;
       }
     }
     
@@ -1394,11 +1421,11 @@ h1{
       width: 20px; /* カスタマイズしてください */
     }
     
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 767px) {
       #hamburger:checked
         ~ .c-hamburger-menu__button
         .c-hamburger-menu__button-mark:nth-of-type(1) {
-        transform: translate(2px, 1px) rotate(45deg); /* カスタマイズしてください */
+        transform: rotate(45deg); 
         transform-origin: 0%; /* カスタマイズしてください */
       }
       #hamburger:checked
@@ -1409,7 +1436,7 @@ h1{
       #hamburger:checked
         ~ .c-hamburger-menu__button
         .c-hamburger-menu__button-mark:nth-of-type(3) {
-        transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
+        transform:  rotate(-45deg); /* カスタマイズしてください */
         transform-origin: 0%; /* カスタマイズしてください */
       }
  
@@ -1421,9 +1448,15 @@ h1{
     }
     
     .menu ul{
-        display: none;
+        opacity: 0;
     }
     
+    .menu_sp{
+        display: block;
+    }
+
+
+
     .DESIGNCOODINATE_logo_pc { display: none !important; }
     .DESIGNCOODINATE_logo_sp { display: block !important; }
     
@@ -1647,7 +1680,7 @@ h1{
 
     .name p:first-child{
         font-size: 20px;
-        
+        margin-right: 24px;
     }
 
     .name p:nth-child(2){
@@ -1848,27 +1881,31 @@ h1{
     margin: 0;
 }
 
-.decoration1{
+.decoration1,.decoration2{
     top: 20px;
-    left: 13px;
+    left: 3px;
 }
 
-.decoration1 p:first-of-type{
+.decoration1 p:first-of-type,.decoration2 p:first-of-type{
     font-size: clamp(7px, 5.3vw, 10px);
     
 }
 
-.decoration1 p:nth-of-type(2){
+.decoration1 p:nth-of-type(2),.decoration2 p:nth-of-type(2){
     font-size: clamp(10px, 5.3vw, 13px);
 
 }
 
 
-.number001{
+
+
+
+.number001,.number002{
     font-size: clamp(60px, 5.3vw, 84px);
+    left: -1%;
 }
 
-.number001 span{
+.number001 span ,.number002 span{
     font-size: clamp(80px, 5.3vw, 112px);
     top: 2px;
 }
@@ -1885,9 +1922,22 @@ h1{
     left: 50%;
     transform: translateX(-50%);
     font-size: 26px;
-    width: 186px;
-    height: 79px;
+    width: 141px;
+    height: 63px;
     border-radius: 40px;
+}
+
+.button_right{
+        margin-left: 0;
+}
+
+.work_image p{
+    font-size: clamp(14px, 4vw, 17px);
+}
+
+
+#contact{
+    padding: 0 6%;
 }
 
 
