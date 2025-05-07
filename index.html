@@ -10,9 +10,9 @@
 
     <link rel="stylesheet" type="text/css" href="css/remodal.css">
     <link rel="stylesheet" type="text/css" href="css/remodal-default-theme.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/remodal.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./remodal.min.js"></script>
+    <script src="./jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -21,47 +21,59 @@
     <section class="mainvisual">
 
 
-        <header class="menu c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
-
+        <div class="menu_title">
             <p>Web&Graphic design portfolio</p>
+            <ul class="menu_pc">
+                <li><a href="#concept">concept</a></li>
+                <li><a href="#aboutme">about me</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#design_works">works</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+
+        </div>
+
+        <header class="menu c-header c-hamburger-menu">
+
+            <p class="menu_title">Web&Graphic design portfolio</p>
 
             <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input" />
             <label for="hamburger" class="c-hamburger-menu__bg"></label>
 
+
+
+
             <ul class="c-header__list c-hamburger-menu__list">
 
-                <div class="menu_title">
+                <li>MENU</li>
 
-                    <li class=" c-header__list-item">
-                        <a href="#concept" class="c-header__list-link"><span>01</span>concept</a>
+                <li class="c-header__list-item">
+                    <a href="#concept" class="c-header__list-link"><span>01</span>concept</a>
+                    <p>デザインする上での考え方</p>
 
-                    </li>
-                    <li class="c-header__list-item">
-                        <a href="#aboutme" class="c-header__list-link"><span>02</span>aboutme</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="#aboutme" class="c-header__list-link"><span>02</span>aboutme</a>
+                    <p>自己紹介＆経歴</p>
 
-                    </li>
-                    <li class="c-header__list-item">
-                        <a href="#skill" class="c-header__list-link"><span>03</span>skill</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="#skill" class="c-header__list-link"><span>03</span>skill</a>
+                    <p>経歴・スキルのご紹介</p>
 
-                    </li>
-                    <li class="c-header__list-item">
-                        <a href="#desgin_works" class="c-header__list-link"><span>04</span>works</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="#desgin_works" class="c-header__list-link"><span>04</span>works</a>
+                    <p>制作物のご紹介</p>
 
-                    </li>
-                    <li class="c-header__list-item">
-                        <a href="#contact" class="c-header__list-link"><span>05</span>contact</a>
+                </li>
+                <li class="c-header__list-item">
+                    <a href="#contact" class="c-header__list-link"><span>05</span>contact</a>
+                    <p>お問合せはこちらから</p>
 
-                    </li>
+                </li>
 
-                </div>
 
-                <div class="menu_detail">
-                    <li>デザインする上での考え方</li>
-                    <li>自己紹介＆経歴</li>
-                    <li>経歴・スキルのご紹介</li>
-                    <li>制作物のご紹介</li>
-                    <li>お問合せはこちらから</li>
-                </div>
 
             </ul>
 
@@ -78,13 +90,7 @@
         </header>
 
 
-        <!-- <ul>
-                <li><a href="#concept">concept</a></li>
-                <li><a href="#aboutme">about me</a></li>
-                <li><a href="#skill">skill</a></li>
-                <li><a href="#design_works">works</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul> -->
+
 
 
         <h1>
@@ -144,7 +150,7 @@
 
         </div>
 
-        <div class="inview woman_photo is-show">
+        <div class="inview woman_photo">
             <img src="./images/woman_photo.jpg" alt="">
 
         </div>
@@ -351,8 +357,28 @@
 
                     <a href="#modal_01" class="btn">detail</a>
                     <div class="remodal" data-remodal-id="modal_01">
-                        <div><img src="   " alt="work1"></div>
-                        <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+
+                        <div class="work_number_modal">
+                            <div class="decoration1_modal">
+                                <p>web design/</p>
+                                <p>banner</p>
+                            </div>
+                            <p class="number001_modal">00<span>1</span></p>
+                        </div>
+
+                        <div><img src="./images/works1.jpg" alt="work1"></div>
+
+                        <div class="modal_midashi">
+                            <p>1.夏らしさを演出</p>
+                            <p>2.期間限定の特別感</p>
+                        </div>
+                        <p class="modal_setsumei">
+                            エメラルドグリーンからグリーンイエローに変化するグラデーションを背景色にして、夏の爽やかを表現しました。また、アイスクリームの背景を白壁の画像にすることで、夏の太陽が差し込むような明るい印象を作りました。
+                            「週末」を目立たせることで期間限定の特別感を感じてもらえるようにしました。</p>
+
+
+
+                        <button data-remodal-action="cancel" class="remodal-cancel">×</button>
                     </div>
 
                     <!-- <button onclick="openPopup()">detail</button> -->
@@ -553,14 +579,17 @@
     </iframe>
 
 
-    $(function(){
-    $(".inview").on("inview", function (event, isInView) {
-    if (isInView) {
-    $(this).stop().addClass("is-show");
-    }
-    });
-    });
+    <script>
 
+        $(function () {
+            $(".inview").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+
+    </script>
 
 
 </body>

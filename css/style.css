@@ -22,7 +22,7 @@ body{
   }
   
 
-.menu {
+.menu_title {
     display: flex;
     color: #fff;
     justify-content: space-between;
@@ -35,11 +35,11 @@ body{
     
 }
 
-.menu p{ 
+.menu_title p{ 
     font-size: 26px;
 }
     
-    .menu ul{
+    .menu_title ul{
         list-style: none;
         display: flex;
         font-size: 18px;
@@ -48,11 +48,11 @@ body{
         gap: 4vw;
     }
         
-.menu ul li{
+.menu_title ul li{
     white-space: nowrap;
 }
 
-.menu_sp{
+.menu{
     display: none;
 }
 
@@ -1144,6 +1144,9 @@ h1{
     width: 141px;
     height: 63px;
     border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 
 }
@@ -1154,21 +1157,90 @@ h1{
   .remodal {
     position: relative;
     padding: 25px;
+    
+
   }
   .remodal img {
-    width: 100%;
+    width: 70%;
     height: auto;
     vertical-align: top;
+    margin: 14px auto 40px;
+    box-shadow: 7px 6px 9px #33333333; 
   }
   .remodal-cancel {
     color: #fff;
-    background: #000000;
+    background: #a3b3b7;
     width: 100%;
+    height: 100%;
     margin-top: 25px;
+    border-radius: 50%;
   }
   .remodal-cancel:hover {
     background: #333;
   }
+
+   .work_number_modal{
+    text-align: left;
+   }
+
+
+  .decoration1_modal{
+    position: relative;
+    top: 27px;
+    left: 17px;
+}
+
+.decoration1_modal p:first-of-type{
+    font-size: clamp(7px, 5.3vw, 10px);
+    color: #ed9195;
+    font-weight: bold;
+  
+}
+
+.decoration1_modal p:nth-of-type(2){
+    font-size: clamp(10px, 5.3vw, 13px);
+    color: #ed9195;
+    font-weight: bold;
+    
+}
+
+.number001_modal{
+    font-family: "ヒラギノ明朝 Pro";
+    font-size: clamp(65px,4vw,84px);
+    color: #ed9195;
+    position: relative;
+    left: 10px;
+}
+
+.number001_modal span{
+    font-size: clamp(95px,4vw,112px);
+    position: relative;
+    left: -9px;
+}
+
+.modal_midashi{
+    display: flex;
+    font-size: clamp(14px,4vw,20px);
+    font-weight: bold;
+    margin-bottom: 28px;
+    letter-spacing: 0.03em;
+}
+
+.modal_midashi p:first-child{
+    margin-right: 38px;
+}
+
+.modal_setsumei{
+    font-size: clamp(14px,4vw,16px);
+    text-align: left;
+    letter-spacing: 0.07em;
+    line-height: 1.3;
+
+}
+
+
+
+
 
 .button_right{
     margin-left: auto;
@@ -1364,7 +1436,9 @@ h1{
 
 
 @media screen and (max-width:767px) {
-
+    .menu{
+        display: block;
+    }
     .c-hamburger-menu__list{
         background-color: #eeeeee; /* カスタマイズしてください */
         align-items: flex-start;
@@ -1387,50 +1461,113 @@ h1{
         top: 0;
         left: 0;
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         z-index: 5;
       }
-    }
-    
-    .c-hamburger-menu__input {
-      display: none;
-    }
-    
-    .c-hamburger-menu__bg {
-      background-color: #000; /* カスタマイズしてください */
-      cursor: pointer;
-      display: none;
-      height: 100vh;
-      left: 0;
-      opacity: 0.4; /* カスタマイズしてください */
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: -1;
-    }
-    
-    #hamburger:checked ~ .c-hamburger-menu__bg {
-      display: block;
-    }
-    
-    .c-hamburger-menu__button {
-      display: none;
-    }
 
-   
+      .c-hamburger-menu__input {
+        display: none;
+      }
+      
+      .c-hamburger-menu__bg {
+        background-color: #000; /* カスタマイズしてください */
+        cursor: pointer;
+        display: none;
+        height: 100vh;
+        left: 0;
+        opacity: 0.4; /* カスタマイズしてください */
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
+      
+      #hamburger:checked ~ .c-hamburger-menu__bg {
+        display: block;
+      }
+      
+      .c-hamburger-menu__button {
+        display: none;
+      }
 
-    .c-header__list li{
-        color: #4d4d4d;
+      .c-header__list li:not(:first-child){
+       font-size: 20px; 
+       padding-bottom: 63px;
+      }
+
+      .c-header__list li:first-child{
+        padding-bottom: 37px;
+      }
+  
+     .c-header__list-item{
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         position: relative;
+     }
+  
+     .c-header__list-item a{
+      background-color: #ebe9e6;
+      padding-right: 10px;
+      font-size: 18px;
+     }
+
+     .c-header__list-link span{
+        color: #cc6688;
+        font-size: 14px;
+        font-weight: bold;
+     }
+  
+  
+  
+     .c-header__list-item p{
+         width: 205px;
+         background-color: #ebe9e6;
+         padding-left: 10px;
+         font-size: 14px;
+  
+     }
+  
+     .c-header__list-item::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #4d4d4d;
+        position: absolute;
+        z-index: -1;
+     }
+  
+  
+     .c-header__list{
+      box-sizing: border-box;
+  }
+  
+      .c-header__list li{
+          color: #4d4d4d;
+      }
+      
+  
+
+
+
+
+
     }
     
-
+    
 
 
     @media screen and (max-width: 767px) {
 
+        .menu_title{
+            display: none;    
+        }
 
-
-
+        .menu{
+            display: block;
+        }
 
       .c-hamburger-menu__button {
         align-items: center;
@@ -1460,6 +1597,8 @@ h1{
     }
     
     @media screen and (max-width: 767px) {
+
+
       #hamburger:checked
         ~ .c-hamburger-menu__button
         .c-hamburger-menu__button-mark:nth-of-type(1) {
@@ -1478,7 +1617,7 @@ h1{
         transform-origin: 0%; /* カスタマイズしてください */
       }
  
-    .menu p{
+    .menu_title{
         font-size: 13px;
         position: absolute;
         top: 34px;
