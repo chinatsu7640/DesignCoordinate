@@ -220,13 +220,14 @@ h1{
     
 }
 
-.woman_photo {
+.woman_photo img{
     opacity: 0;
-    transition: 2s;
+    transition: opacity 1s ease-in-out;
   }
-.woman_photo.is-show {
-    opacity: 1;
-  }
+
+  .woman_photo img.visible{
+    opacity: 1;}
+
 
 
 .concept_midashi{
