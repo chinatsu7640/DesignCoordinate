@@ -1510,7 +1510,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
   .decoration1_modal{
     position: relative;
     top: 22px;
-    left: -5px;
+    left: 4px;
 }
 
 .decoration1_modal p:first-of-type{
@@ -2702,6 +2702,11 @@ left: 1px;}
 
 }
 
+  .decoration1_modal{
+   
+    left: -5px;
+}
+
 .modal_midashi,
 .modal_midashi3{
     flex-direction: column;
@@ -2711,6 +2716,12 @@ left: 1px;}
 
 .modal_midashi p:first-child {
     margin-bottom: 5px;
+}
+
+
+
+.work_number_modal {
+    width: 90px;
 }
 
 
