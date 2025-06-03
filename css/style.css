@@ -345,6 +345,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     padding-bottom: 3%;
     position: relative;
     top: -5%;
+    white-space: nowrap;
 }
 
 .concept_text p:last-of-type{
@@ -442,11 +443,11 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 .swing:after {
     content: '';
     border: 1px solid #999;
-    top: -17px;
-    z-index: 0;
-    left: 47%;
-    width: 35px;
-    height: 35px;
+    top: -16px;
+    z-index: -1;
+    left: 33%;
+    width: 30%;
+    height: 30%;
     border-bottom: none;
     border-right: none;
     transform: rotate(45deg);
@@ -487,8 +488,8 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 .images_aboutme img:nth-child(2){
     width: 6%;
     position: absolute;
-    top: -8%;
-    left: 51%;
+    top: -10.8%;
+    left: 49.3%;
     z-index: 2;
 }
 
@@ -1566,7 +1567,8 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     font-weight: bold;
 }
 
-.modal_midashi{
+.modal_midashi,
+.modal_midashi3{
     display: flex;
     font-size: clamp(14px,4vw,20px);
     margin-bottom: 28px;
@@ -1578,14 +1580,19 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 
 
 
-.modal_midashi p:first-child{
-    margin-right: 38px;
+.modal_midashi p:first-child,
+.modal_midashi3 p:first-child{
     font-weight: bold;
+    line-height: 1.2;
 }
 
-.modal_midashi p:nth-child(2){
+
+.modal_midashi p:nth-child(2),
+.modal_midashi3 p:nth-child(2){
     font-weight: bold;
+    line-height: 1.2;
 }
+
 
 
 .modal_setsumei{
@@ -1597,21 +1604,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 
 }
 
-/* .modal4_img{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 0 auto;
-}
 
-.modal4_img img{
-    width: auto;
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-    box-shadow: 7px 6px 9px #33333333; 
-    margin: 0 3% 0 3%;
-} */
 
 
 .modal4_img {
@@ -1695,6 +1688,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     margin-left: 8%;
     position: relative;
     top: -27px;
+     min-height: 100px; 
 }
 
 
@@ -1709,7 +1703,12 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     font-feature-settings: initial;
     position: relative;
     left: 28px;
+     letter-spacing: 0.05em;
+     line-height: 1.4;
+     white-space: nowrap;
 }
+
+
 
 .work_tategaki2{
     writing-mode: vertical-rl;
@@ -1721,7 +1720,32 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     font-feature-settings: initial;
     position: relative;
     left: 40px;
+     letter-spacing: 0.05em;
+     line-height: 1.4;
+     white-space: nowrap;
 }
+
+
+.is-safari .work_tategaki1,
+.is-safari .work_tategaki2 {
+    left: 0; /* Safari用の `left` の値 */
+}
+
+
+.is-safari .decoration1, 
+.is-safari .decoration2 {
+left: 5px;}
+
+.is-safari .number001 {
+position: relative;
+left: 2px;}
+
+
+.is-safari .number001 span {
+position: relative;
+left: 1px;}
+
+
 
 
 
@@ -1729,6 +1753,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     margin-right: 8%;
     position: relative;
     top: -27px;
+     min-height: 100px; 
 }
 
 .number002{
@@ -1744,6 +1769,12 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     left: -4px;
     font-family: "Chonburi", serif;
 }
+
+.is-safari .number002 span{
+    position: relative;
+    left: 1px;
+}
+
 
 .decoration2{
     position: relative;
@@ -2668,7 +2699,8 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 
 }
 
-.modal_midashi{
+.modal_midashi,
+.modal_midashi3{
     flex-direction: column;
     text-align: left;
 

@@ -16,6 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="./remodal.min.js"></script>
     <script src="./jquery.inview.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 
 <body>
@@ -601,7 +602,7 @@
 
                                 <div><img src="./images/work3_modal.jpg" alt="work3"></div>
 
-                                <div class="modal_midashi">
+                                <div class="modal_midashi3">
                                     <p>幅広い世代に受け入れらるようなデザイン</p>
                                 </div>
                                 <p class="modal_setsumei">
@@ -751,7 +752,7 @@
 
 
 
-                                <div class="modal_midashi">
+                                <div class="modal_midash3">
                                     <p>ファッション雑誌風のデザイン</p>
                                 </div>
                                 <p class="modal_setsumei">
@@ -1042,6 +1043,18 @@
         });
 
 
+    </script>
+
+
+
+    <script>
+        function isSafari() {
+            return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        }
+
+        if (isSafari()) {
+            document.body.classList.add('is-safari');
+        }
     </script>
 
 
