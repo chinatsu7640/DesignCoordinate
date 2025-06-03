@@ -1510,7 +1510,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
   .decoration1_modal{
     position: relative;
     top: 22px;
-    left: 0px;
+    left: -5px;
 }
 
 .decoration1_modal p:first-of-type{
