@@ -217,7 +217,8 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 .mokuji_lastsection li:last-of-type{
     font-size: clamp(14px,1.5vw,19px);
     font-weight: 400;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+        margin-top: 0.7%;
      
     }
 
@@ -351,7 +352,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 .concept_text p:last-of-type{
     margin: 0 auto;
     font-size: clamp(15px,1.5vw,17px);
-    line-height: 1.65;
+    line-height: 1.8;
     max-width: 384px;
 
 }
@@ -659,7 +660,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 
 .seif_introduction p:nth-child(2){
     font-size: clamp(15px,1.5vw,17px);
-    line-height: 1.65;
+    line-height: 1.8;
 }
 
 
@@ -1411,9 +1412,9 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 
 
 .work_image p{
-    font-size: 23px;
+    font-size: 21px;
     margin-top: 38px;
-    line-height: 1.4;
+    line-height: 1.5;
     color: #333333;
     letter-spacing: 0.09em;
 
@@ -1546,6 +1547,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
     font-size: clamp(65px,4vw,84px);
     color: #ed9195;
     
+    
 }
 
 .number_002_modal_matome{
@@ -1584,6 +1586,7 @@ h1.fade-in .DESIGNCOODINATE_logo_sp {
 .modal_midashi3 p:first-child{
     font-weight: bold;
     line-height: 1.2;
+    margin-right: 30px;
 }
 
 
